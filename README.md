@@ -17,7 +17,7 @@ Beginner programmers are often scared or discouraged by error messages.  But err
 
 ## Reading Error Messages
 
-After you fork and clone this lab, type `ruby lib/a_name_error.rb`
+After you fork and clone this lab, type into your terminal: `ruby lib/a_name_error.rb`
 
 You should see an error message!
 
