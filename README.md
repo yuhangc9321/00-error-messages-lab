@@ -7,8 +7,8 @@ In this lab, you'll be reading error messages from tests. This lab is designed s
 ## Objectives
 
 1. Read the three different parts of an error message.
-2. Identify four error types- name errors, syntax errors, type errors, and division errors- and fix them
-3. Describe a test suite, where it's found in a lab, and its purpose
+2. Identify four error types- name errors, syntax errors, type errors, and division errors- and fix them.
+3. Describe a test suite, where it's found in a lab, and its purpose.
 4. Use the `rspec` command in terminal to run the tests for a lab.
 
 ## Don't be afraid!
@@ -35,7 +35,7 @@ lib/a_name_error.rb:3:in `<main>':
 
 * `lib/a_name_error.rb` is the file the error occurred in.
 * `3` is the line of code with the error.
-* `<main>` is the scope of the error.
+* `<main>` is the scope of the error (don't worry about this too much right now).
 
 This is extremely useful when you make an app that uses several files that each have a bunch of code.
 
@@ -53,7 +53,7 @@ The interpreter does the best job it can to tell you what it thinks went wrong.
 (NameError)
 ```
 
-This is a [Ruby Error Type](http://www.ruby-doc.org/core-2.2.0/Exception.html).
+This is a [Ruby Error Type](http://www.ruby-doc.org/core-2.2.0/Exception.html).  You don't have to read this right now, but come back to it later for reference if you need it.
 
 This is one of the best parts of programming: debugging and fixing errors. It's like you're a detective solving a crime. The only bad thing is that more often than not, you're also the criminal that caused the error in the first place :)
 
@@ -98,7 +98,7 @@ DivisionErrors are caused when a given number is divided by 0.
 
 The tests for each lab will be found inside the `spec` directory of that lab. Tests are programs, written using the RSpec testing library, that are written to make sure your program is running properly. Generally, tests will call on the methods you define in your programs and check to see if they are working the way they are expected to.
 
-In the future, you will learn how to read tests more thoroughly and even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `rspec` command in your terminal in the directory of the lab you are working on, that runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this README. Paying attention to those error messages will help you to pass the test.
+In the future, you will learn how to read tests more thoroughly and maybe even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `rspec` command in your terminal in the directory of the lab you are working on, that runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this README. Paying attention to those error messages will help you to pass the test.
 
 
 ## Instructions
@@ -122,6 +122,10 @@ The point of this lab is to get you comfortable reading error messages and fixin
 3. Once your code is passing with the `rspec` command, you are finished!
 
 Feel proud. Being able to read an error message and fix it, no matter how basic, is a huge step in being a programmer. Get comfortable with broken code. It's totally normal in programming.
+
+## One last thing
+
+Sometimes when you try to fix an error, you will get a **different** error.  Remember: **this is a good thing**.  It means that you fixed the first error and you're one step closer to getting rid of ALL of the errors!
 
 ## Video
 
