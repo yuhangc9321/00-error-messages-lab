@@ -115,7 +115,16 @@ The point of this lab is to get you comfortable reading error messages and fixin
 
 2. Let's run each of the files in the `lib` directory using the `ruby` command:
 
-  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. **Read the error message** and open that file in your text editor and see if you can fix the error. When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `rspec` command and seeing that you have a passing test and 3 remaining failures. For example, if you see a `ZeroDivisionError`, you'll have to figure out *where* Ruby is trying to divide by 0 and change the code so that the division operation is valid (i.e., something other than 0).
+  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. **Read the error message** and open that file in your text editor and see if you can fix the error. In this case, the message says:
+```
+Failure/Error:
+    expect{
+     load './lib/a_division_by_zero_error.rb'
+    }.to_not raise_error
+```
+  * The key words there are `expect...to_not raise_error`. So **just make any changes necessary to not raise an error** (except deleting all the code).
+  
+  * When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `rspec` command and seeing that you have a passing test and 3 remaining failures. For example, if you see a `ZeroDivisionError`, you'll have to figure out *where* Ruby is trying to divide by 0 and change the code so that the division operation is valid (i.e., something other than 0).
 
   * Run each file via `ruby lib/<file name>`, fix the errors, and confirm with `rspec`. Then follow the next error's stack trace back to the next failing file in `lib/` and repeat the fixing process until you're done and all the tests pass. Pay attention to the filenames in `lib` if you need hints for what kind of error to look for.
 
